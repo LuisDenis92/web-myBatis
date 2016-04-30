@@ -1,1 +1,29 @@
-{"proveedor":{"id":1,"descripcion":"proveedor"}, "detalleCompraList":[{"producto":{"id":1,"detalle":"descrip","precio":12,"stock":0,"proveedor":{"id":1,"descripcion":"proveedor"}},"cantidad":10}]}
+[
+    {
+        "producto": {
+            "id":754,
+            "detalle":"producto1",
+            "precio":10,
+            "stock":10,
+            "proveedor":{
+                "id":2,
+                "descripcion":"proveedorB"
+            }
+        },
+        "cantidad": 2
+    },
+    {
+        "producto": {
+            "id":756,
+            "detalle":"producto2",
+            "precio":18,
+            "stock":10,
+            "proveedor":{
+                "id":2,
+                "descripcion":"proveedorB"
+            }
+        },
+        "cantidad": 1
+    }
+]
+ 
