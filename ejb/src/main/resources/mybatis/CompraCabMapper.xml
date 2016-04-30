@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.CompraCabMapper">
+
+ 
+
+  <select id="getAllCompraCab" resultType="py.pol.una.ii.pw.model.Compra_Cab">
+  select * from compra_cab
+  </select>
+  
+  
+  <select id='getCompraCabById' parameterType='long' resultType="py.pol.una.ii.pw.model.Compra_Cab">
+	    select * from compra_cab
+	     where id = #{cabId}
+ </select>
+ 
+ 
+
+
+<insert id="createCompraCab" parameterType="py.pol.una.ii.pw.model.Compra_Cab" 
+						useGeneratedKeys="true" keyProperty="id">
+
+insert into Compra_Cab (fecha) values (#{fecha})
+						
+</insert>
+
+ 
+</mapper>

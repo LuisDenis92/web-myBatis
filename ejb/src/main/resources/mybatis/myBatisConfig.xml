@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="MANAGED">
+      		
+      </transactionManager>
+      <dataSource type="JNDI">
+        <property name="data_source" value="java:/webDS"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="mybatis/ClienteMapper.xml"/>
+    <mapper resource="mybatis/ProveedorMapper.xml"/>
+    <mapper resource="mybatis/ProductoMapper.xml"/>
+    <mapper resource="mybatis/duplicadoMapper.xml"/>
+    <mapper resource="mybatis/CompraCabMapper.xml"/>
+    <mapper resource="mybatis/detalleCompraMapper.xml"/>
+    <mapper resource="mybatis/detalleVentaMapper.xml"/>
+    <mapper resource="mybatis/VentaCabMapper.xml"/>
+       
+  </mappers>
+</configuration>

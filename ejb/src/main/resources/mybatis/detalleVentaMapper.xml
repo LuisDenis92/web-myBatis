@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.detalleVentaMapper">
+
+  
+ 
+ 
+
+
+<insert id="createVentaDet" parameterType="py.pol.una.ii.pw.model.Venta_Det" 
+						useGeneratedKeys="true" keyProperty="id">
+
+insert into Venta_Det (producto,cantidad,  cabecera) values 
+				(#{producto.id},#{cantidad}, #{cabecera.id})
+						
+</insert>
+
+ 
+</mapper>

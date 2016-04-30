@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.ProveedorMapper">
+
+<resultMap type="py.pol.una.ii.pw.model.Proveedor" id="ProveedorResult">
+    <id property="id" column="idprov"/>
+    <result property="descripcion" column="descripcion"/>
+   </resultMap>
+   
+   
+  <select id="getAllProveedores" resultMap="ProveedorResult">
+   select idprov, descripcion from Proveedor
+  </select>
+  <select id='getProveedorById' parameterType='long' resultMap="ProveedorResult">
+	     select * from Proveedor
+
+	     where idprov = #{proveedorId}
+ </select>
+ 
+ <delete id='removeProveedor' parameterType='long'>
+
+    delete from proveedor where idprov = #{proveedorId}
+</delete>
+
+<insert id="createProveedor" parameterType="py.pol.una.ii.pw.model.Proveedor" 
+						useGeneratedKeys="true" keyProperty="id">
+
+insert into Proveedor (descripcion) values (#{descripcion})
+						
+</insert>
+
+<update id="updateProveedor" parameterType="py.pol.una.ii.pw.model.Proveedor">
+
+	update proveedor
+	set
+		descripcion=#{descripcion}
+		
+	where idprov=#{id}
+
+</update>
+ 
+</mapper>

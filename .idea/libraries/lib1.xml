@@ -1,0 +1,50 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/bcmail-jdk14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/javax.inject.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/lucene-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/mybatis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jackson-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jfreechart.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jackson-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/spring-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jcommon.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/bcprov-jdk14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/itext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/lucene-queryparser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/stax.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/commons-digester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/castor-xml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/spring-beans.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/primefaces.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jasperreports.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/commons-lang.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/aopalliance.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/ecj.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/lucene-sandbox.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/spring-context.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/spring-asm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/gson.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jakarta-regexp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/postgresql.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/spring-expression.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/lucene-queries.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/commons-fileupload.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/spring-aop.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/olap4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/stax-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/commons-collections.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/jackson-databind.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/lucene-analyzers-common.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/bctsp-jdk14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ear/target/EjbJaxRS-ear/lib/castor-core.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

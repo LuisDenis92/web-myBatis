@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EjbJaxRS.iml" filepath="$PROJECT_DIR$/EjbJaxRS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ear/EjbJaxRS-ear.iml" filepath="$PROJECT_DIR$/ear/EjbJaxRS-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejb/EjbJaxRS-ejb.iml" filepath="$PROJECT_DIR$/ejb/EjbJaxRS-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/EjbJaxRS-web.iml" filepath="$PROJECT_DIR$/web/EjbJaxRS-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejb/src/main/main.iml" filepath="$PROJECT_DIR$/ejb/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/src/main/main1.iml" filepath="$PROJECT_DIR$/web/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejb/src/test/test.iml" filepath="$PROJECT_DIR$/ejb/src/test/test.iml" />
+    </modules>
+  </component>
+</project>

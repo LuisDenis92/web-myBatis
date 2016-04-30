@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.duplicadoMapper">
+
+<resultMap type="py.pol.una.ii.pw.model.Proveedor" id="ProveedorResult">
+    <id property="id" column="idprov"/>
+    <result property="descripcion" column="descripcion"/>
+   </resultMap>
+
+<resultMap type="py.pol.una.ii.pw.model.Producto" id="ProductoResult">
+    <id property="id" column="id"/>
+    <result property="detalle" column="detalle"/>
+    <result property="precio" column="precio"/>
+    <result property="stock" column="stock"/>
+    <association property="proveedor" resultMap="ProveedorResult"/>
+   </resultMap>
+   
+   <resultMap type="py.pol.una.ii.pw.model.Producto_Duplicado" id="DuplicadoResult">
+    	<id property="id" column="iddupli"/>
+    	<result property="cantidad" column="cantidad"/>
+    	<association property="producto" resultMap="ProductoResult"/>
+   </resultMap>
+
+  <select id="getAllDuplicados" resultMap="DuplicadoResult">
+  select du.iddupli, du.cantidad, p.id, p.detalle, p.precio, p.stock, pr.idprov, pr.descripcion 
+  from 
+  producto_duplicado du join producto p  on du.producto= p.id join proveedor pr on p.proveedor = pr.idprov
+  </select>
+  
+ 
+ <select id='getDuplicadoById' parameterType='long' resultMap="DuplicadoResult">
+  select du.iddupli, du.cantidad, p.id, p.detalle, p.precio, p.stock, pr.idprov, pr.descripcion 
+  from 
+  producto_duplicado du join producto p  on du.producto= p.id join proveedor pr on p.proveedor = pr.idprov
+	     where iddupli = #{duplicadoId}
+ </select>
+ 
+ <delete id='removeDuplicado' parameterType='long'>
+
+    delete from producto_duplicado where iddupli = #{duplicadoId}
+</delete>
+
+
+<insert id="createDuplicado" parameterType="py.pol.una.ii.pw.model.Producto_Duplicado" 
+						useGeneratedKeys="true" keyProperty="id">
+
+insert into producto_duplicado (producto,cantidad) values 
+							(#{producto.id},#{cantidad})
+						
+</insert>
+
+<update id="updateDuplicado" parameterType="py.pol.una.ii.pw.model.Producto_Duplicado">
+
+	update producto_duplicado
+	set
+		producto= #{producto.id},
+		cantidad= #{cantidad}
+
+	where iddupli= #{id}
+
+</update>
+
+ 
+</mapper>

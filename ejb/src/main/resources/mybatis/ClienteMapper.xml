@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.ClienteMapper">
+  <select id="selectClientes" resultType="py.pol.una.ii.pw.model.Clientes">
+   select * from Clientes 
+  </select>
+  <select id='getClienteById' parameterType='long' resultType="py.pol.una.ii.pw.model.Clientes">
+	     select * from Clientes
+
+	     where id = #{clienteId}
+ </select>
+ 
+ <delete id='removeCliente' parameterType='long'>
+
+    delete from clientes where id = #{clienteId}
+</delete>
+
+<insert id="createCliente" parameterType="py.pol.una.ii.pw.model.Clientes" 
+						useGeneratedKeys="true" keyProperty="id">
+
+insert into Clientes (apellido,nombre) values (#{apellido},#{nombre})
+						
+</insert>
+
+<update id="updateCliente" parameterType="py.pol.una.ii.pw.model.Clientes">
+
+	update clientes
+	set
+		nombre=#{nombre},
+		apellido=#{apellido}
+	where id=#{id}
+
+</update>
+ 
+</mapper>
